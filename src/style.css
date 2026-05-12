@@ -1,0 +1,16 @@
+:root{
+--text: #ffffff;
+--dark: #0b0b0b;
+--bg: #1d2429;
+--azul: #00b4d8;
+--ciano: #00d8cd;
+--verde: #00363d;
+--azul2: #5fa4ad;
+}
+    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
