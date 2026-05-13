@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercedes</title>
+    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <nav>
-        <span class="navItems">
+        <span class="navItems" onclick="navTo('s1')">
             <img src="../assets/icons/home.png" alt="Empresa" >
             <a class="navWorks" href="#s1">Empresa</a>
         </span>
-        <span class="navItems">
+        <span class="navItems" onclick="navTo('s2')">
             <img src="../assets/icons/sedan.png" alt="Carros" >
             <a class="navWorks" href="#s2">Carros</a>
         </span>
-        <span class="navItems">
+        <span class="navItems" onclick="navTo('s3')">
             <img src="../assets/icons/video.png" alt="Video" >
             <a class="navWorks" href="#s3">Video</a>
         </span>
-        <span class="navItems">
+        <span class="navItems" onclick="navTo('s4')">
             <img src="../assets/icons/telephone.png" alt="Contato" >
             <a class="navWorks" href="#s4">Contato</a>
         </span>
@@ -32,7 +33,7 @@
     <main>
       <section id="s1">
             <h1>Mercedes</h1>
-            <h2>O melhor carro da temporadas</h2>
+            <h2>O melhor carro da temporada</h2>
       </section>
       <section id="s2">
 
@@ -40,7 +41,7 @@
       <section id="s3">
 
       </section>
-      <section id="">
+      <section id="s4">
 
       </section>
     </main>
@@ -48,5 +49,7 @@
 
     </footer>
     
+    <script src="script.js"></script>
 </body>
+
 </html>
