@@ -162,6 +162,30 @@ footer.ft{
     height: 800px;
  }
 
+#s2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    min-height: 50vw;
+}
+
+.card{
+width: 300px;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+opacity: 0;
+transform: translateY();
+}
+
+
+
+
+
 @media (width <= 1000px){
     .navWords{
         display: none;
