@@ -76,7 +76,7 @@ nav.sc{
     font-weight: 700;
 }
 .navItems a:hover{
-    text-shadow: 0px 3px 10px vae(--ciano);
+    text-shadow: 0px 3px 10px var(--ciano);
     opacity: 1;
 }
 
@@ -109,7 +109,6 @@ h1{
     width: 100%;
     text-align: center;
     line-height: 180px;
-     text-shadow: 0px 3px 10px var(--azul);
     text-shadow: 0px 3px 10px var(--azul);
     animation: esquerda 2s ease-in-out;
 }
@@ -179,12 +178,81 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 opacity: 0;
-transform: translateY();
+transform: translateY(200px);
+transition: opacity 0.6s ease, transfom 0.6s ease;
 }
 
 
+.card.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
 
+#s4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    min-height: 70vh;
 
+}
+
+.formulario{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    box-shadow: 0px 7px 50px var(--azul3);
+}
+
+.formulario label{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -25px;
+    font-size: 22px;
+}
+.formulario input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--text);
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 20;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.formulario textarea{
+    max-width: 100%;
+    width: 255px;
+    min-width: 255px;
+    max-height: 300px;
+    min-height:150px;
+    background-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.formulario button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--text);
+    border: none;
+    transition: all 200ms ease-in-out;
+}
+
+.formulario button:hover{
+    background-color: #00363d;
+    color: var(--text);
+}
 
 @media (width <= 1000px){
     .navWords{
@@ -196,6 +264,9 @@ transform: translateY();
 .navItems a{
     display: none;
 }
+ .vid {
+        height: 412px;
+    }
     h1{
     font-size: 50px;
     }
